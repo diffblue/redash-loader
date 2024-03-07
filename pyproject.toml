@@ -1,0 +1,35 @@
+# Copyright 2022-2024 Diffblue Limited
+#
+# Licensed under the Apache License, Version 2.0 (the "License");
+# you may not use this file except in compliance with the License.
+# You may obtain a copy of the License at
+#
+#     http://www.apache.org/licenses/LICENSE-2.0
+#
+# Unless required by applicable law or agreed to in writing, software
+# distributed under the License is distributed on an "AS IS" BASIS,
+# WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+# See the License for the specific language governing permissions and
+# limitations under the License.
+
+[tool.poetry]
+name = "redash-loader"
+version = "0.1.0"
+description = "Tool to synchronise Re:Dash queries and dashboards with a git repository"
+authors = ["Robert (Jamie) Munro <jamie@diffblue.com>"]
+license = "Apache-2.0"
+
+[tool.poetry.dependencies]
+python = "^3.8"
+"ruamel.yaml" = "^0.17.21"
+requests = "^2.27.1"
+python-dotenv = "^0.19.2"
+redash-toolbelt = "^0.1.9"
+click = "^8.0.3"
+mypy = "^0.931"
+
+[tool.poetry.dev-dependencies]
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
